@@ -54,6 +54,7 @@ services:
       - judge-server
     volumes:
       - ./data/backend:/data
+      - ./OnlineJudge:/app
       - ./dist:/app/dist
     environment:
       - POSTGRES_DB=onlinejudge
